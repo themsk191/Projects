@@ -1,10 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>The MSK Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim | Mehmet Serdar Kılınç</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            color: #58a6ff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #8b949e;
+            font-size: 1.1rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 24px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #58a6ff;
+        }
+
+        .card h3 {
+            color: #f0f6fc;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            color: #8b949e;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background-color: #1f6feb23;
+            color: #58a6ff;
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 12px;
+            border: 1px solid #1f6feb44;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #8b949e;
+            font-size: 0.85rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>The MSK Projects</h1>
-    <p>Research and projects</p>
+
+    <div class="container">
+        <header>
+            <h1>Projelerim</h1>
+            <p>Geliştirdiğim bilimsel, yazılımsal ve kreatif çalışmaların listesi.</p>
+        </header>
+
+        <div class="projects-grid">
+            
+            <!-- Proje 1 -->
+            <div class="card">
+                <h3>KZSK Projesi</h3>
+                <p>Kuantum ve teorik fizik simülasyonları üzerine yapılmış analizler, Python kodları ve yayınlanan bilimsel makaleler.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">LaTeX</span>
+                    <span class="tag">Kuantum Fiziği</span>
+                </div>
+                <a href="#" class="card-link">Detayları İncele &rarr;</a>
+            </div>
+
+            <!-- Proje 2 -->
+            <div class="card">
+                <h3>DKKC Projesi</h3>
+                <p>Matematiksel ve algoritma tabanlı doğrulama betikleri ile teorik veri modelleme çalışmaları.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Algoritma</span>
+                    <span class="tag">Simülasyon</span>
+                </div>
+                <a href="#" class="card-link">Detayları İncele &rarr;</a>
+            </div>
+
+            <!-- Proje 3 -->
+            <div class="card">
+                <h3>First Cause</h3>
+                <p>Bilim kurgu konseptli görsel tasarımlar, kitap kapağı, tanıtım metinleri ve medya prodüksiyon çalışmaları.</p>
+                <div class="tags">
+                    <span class="tag">Kreatif</span>
+                    <span class="tag">Medya</span>
+                    <span class="tag">Sci-Fi</span>
+                </div>
+                <a href="#" class="card-link">Detayları İncele &rarr;</a>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Mehmet Serdar Kılınç — GitHub Pages üzerinde barındırılmaktadır.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
